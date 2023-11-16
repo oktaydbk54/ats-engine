@@ -4,13 +4,13 @@ import pandas as pd
 import requests
 import json
 
-api = 'http://localhost:8000/predict'
+api = 'http://212.68.34.147:8000/predict'
 
 def main():
     st.title('Dream Job Finder')
     job_title = st.text_input('Please Enter Job Title')
     job_location = st.text_input('Please Enter Job Location')
-    job_search_number = st.slider('Job Search Number?', 0, 100,5)
+    job_search_number = st.slider('Job Search Number?', 0, 20,5)
     
     resume_upload = st.file_uploader('Please Upload Resume/CV ', type='pdf')
 
