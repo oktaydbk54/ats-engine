@@ -2,11 +2,12 @@ from fastapi import FastAPI, HTTPException
 import find_jobs
 import clean_text
 import calculate_score
+import calculate_score_v2
+import calculate_score_v3
 import json
 from pydantic import BaseModel
 
 app = FastAPI()
-
 
 class PredictRequest(BaseModel):
     job_title: str
@@ -27,7 +28,9 @@ async def predict(request: PredictRequest):
         job_descriptions = find_jobs.send_requests_for_job_post(job_title, job_location,job_search_number)
 
         # Eşleşme skorunu hesapla
-        score = calculate_score.match_results(resume, job_descriptions)
+        # score = calculate_score.match_results(resume, job_descriptions)
+        # score = calculate_score_v2.match_results(resume, job_descriptions)
+        score = calculate_score_v3.match_results(resume, job_descriptions)
 
         # Sonucu geri gönder
         return {"score": score}

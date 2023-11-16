@@ -4,7 +4,6 @@ import pandas as pd
 import requests
 import json
 
-
 api = 'http://localhost:8000/predict'
 
 def main():
