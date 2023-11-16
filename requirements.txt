@@ -1,0 +1,9 @@
+pandas==2.0.2
+fastapi
+uvicorn
+streamlit
+apify_client
+PyPDF2
+streamlit-aggrid
+nltk
+scikit-learn
