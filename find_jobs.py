@@ -3,7 +3,7 @@ import pandas as pd
 
 def send_requests_for_job_post(job_title,job_location,job_search_number):
 
-    client = ApifyClient("apify_api_jGTDIeyL8OhSwfpI10kRPgNsBg6Jvo1qH7Vw")
+    client = ApifyClient("apify_api_EIgdkqXGnPlfhNElTckWf2mBschYph4anw08")
 
     run_input = {
         "title": job_title,
@@ -12,7 +12,6 @@ def send_requests_for_job_post(job_title,job_location,job_search_number):
     }
 
     run = client.actor("BHzefUZlZRKWxkTck").call(run_input=run_input)
-
 
     jobs_list = list()
     count = 0
