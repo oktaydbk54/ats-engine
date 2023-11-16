@@ -7,3 +7,5 @@ PyPDF2
 streamlit-aggrid
 nltk
 scikit-learn
+transformers
+torch
