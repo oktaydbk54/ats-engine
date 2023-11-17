@@ -6,6 +6,9 @@ import json
 
 api = 'http://localhost:8000/predict'
 
+def shorten_url(url):
+    return f'<a href="{url}" target="_blank">apply</a>'
+
 def main():
     st.title('ATS Engine')
     job_title = st.text_input('Please Enter Job Title')
@@ -38,11 +41,12 @@ def main():
         response = requests.post(url= api , data=json.dumps(feature_data),headers=headers)
         
         response_dataset = pd.DataFrame(response.json()['score'])
-        response_dataset = response_dataset[['title','jobUrl','companyName','location','description','postedTime','Match Scores']]
+        response_dataset = response_dataset[['title','jobUrl','companyName','location','postedTime','Match Scores']]
+        response_dataset['jobUrl'] = response_dataset['jobUrl'].apply(shorten_url)
         response_dataset = response_dataset.sort_values(by=['Match Scores'], ascending=False)
 
         st.title('Prediction Results')        
-        st.dataframe(response_dataset)
+        st.write(response_dataset.to_html(escape=False), unsafe_allow_html=True)
         st.write('Finished!')
     # Yeni eklenen imza kısmı
     st.markdown('**Credit By:** [Emincan Yılmaz](https://www.linkedin.com/in/emincan-yilmaz/) & [Boran Oktay Dabak](https://www.linkedin.com/in/boran-oktay-dabak/)')
