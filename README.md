@@ -78,12 +78,12 @@ Fill in the required fields and hit the start button to gather all the job listi
 
 Jobs are listed from highest to lowest match scores. Apply to the job of interest by clicking on the "apply" button.
 
-![Alt text](https://drive.google.com/uc?export=view&id=1z0gmjIzLBtQ8o9USWYEHlQJrGdTNvg0o "Görsel Başlığı")
+![Apply to Jobs](https://drive.google.com/uc?export=view&id=1z0gmjIzLBtQ8o9USWYEHlQJrGdTNvg0o "Apply to Jobs")
 
 ## Notes
 To run locally, operate two different terminals each time: one with the 'ATS' environment to run 'streamlit run streamlit_codes.py', and another to execute 'uvicorn main_codes:app --reload'.
 
-![Alt text](https://drive.google.com/uc?export=view&id=1z2B5jDgKVsx5mTMBBd2TROH-u6IaoXXi "Görsel Başlığı")
+![Run Lovally](https://drive.google.com/uc?export=view&id=1z2B5jDgKVsx5mTMBBd2TROH-u6IaoXXi "Run Locally")
 
 ## Version
 
