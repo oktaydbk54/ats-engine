@@ -4,7 +4,7 @@ import pandas as pd
 import requests
 import json
 
-api = 'http://212.68.34.147:8000/predict'
+api = 'http://localhost:8000/predict'
 
 def main():
     st.title('Dream Job Finder')
