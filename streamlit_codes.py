@@ -44,6 +44,8 @@ def main():
         st.title('Prediction Results')        
         st.dataframe(response_dataset)
         st.write('Finished!')
+    # Yeni eklenen imza kısmı
+    st.markdown('**Credit By:** [Emincan Yılmaz](https://www.linkedin.com/in/emincan-yilmaz/) & [Boran Oktay Dabak](https://www.linkedin.com/in/boran-oktay-dabak/)')
 
 if __name__ == "__main__":
     main()
