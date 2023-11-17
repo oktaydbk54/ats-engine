@@ -21,5 +21,6 @@ def send_requests_for_job_post(job_title,job_location,job_search_number):
         if count == int(job_search_number):
             break
     jobs_dataset = pd.DataFrame(jobs_list)
-    jobs_dataset.to_csv(f'Sample_job_posts/{job_title}_{job_location}Jobs_posts.csv',index=False)
+    # jobs_dataset.to_csv(f'Sample_job_posts/{job_title}_{job_location}Jobs_posts.csv',index=False)
     return jobs_dataset
+
