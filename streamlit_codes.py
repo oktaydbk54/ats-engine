@@ -7,7 +7,7 @@ import json
 api = 'http://localhost:8000/predict'
 
 def main():
-    st.title('Dream Job Finder')
+    st.title('ATS Engine')
     job_title = st.text_input('Please Enter Job Title')
     job_location = st.text_input('Please Enter Job Location')
     job_search_number = st.slider('Job Search Number?', 0, 20,5)
