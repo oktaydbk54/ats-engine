@@ -4,7 +4,11 @@
 
 ATS Engine is an open-source project aimed at simplifying the job search and application process in the IT sector. With this tool, you can effortlessly retrieve job listings in your field of interest, complete with all details, see how much your CV matches with each job listing, and apply directly to the job through the provided links.
 
-## How It Works
+## Usage
+
+Easy way : You can use it easily via this link: http://212.68.34.147:8501/
+
+## Developer Guide
 
 ### Step 1: Clone the Repository
 
