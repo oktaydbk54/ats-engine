@@ -90,4 +90,4 @@ To run locally, operate two different terminals each time: one with the 'ATS' en
 The current version is 1.0. Development is ongoing, and any support or suggestions are welcome. Please reach out to us at:
 
 * emincan.yilmaz@gmail.com & [LinkedIn](https://www.linkedin.com/in/emincan-yilmaz/)
-* email2@example.com & [LinkedIn](https://www.linkedin.com/in/boran-oktay-dabak/)
+* oktaydabak54@gmail.com & [LinkedIn](https://www.linkedin.com/in/boran-oktay-dabak/)
