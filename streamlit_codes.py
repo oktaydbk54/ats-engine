@@ -39,6 +39,7 @@ def main():
         
         response_dataset = pd.DataFrame(response.json()['score'])
         response_dataset = response_dataset[['title','jobUrl','companyName','location','description','postedTime','Match Scores']]
+        response_dataset = response_dataset.sort_values(by=['Match Scores'], ascending=False)
 
         st.title('Prediction Results')        
         st.dataframe(response_dataset)
