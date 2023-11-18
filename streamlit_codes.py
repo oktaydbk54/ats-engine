@@ -49,7 +49,7 @@ def main():
         st.write(response_dataset.to_html(escape=False), unsafe_allow_html=True)
         st.write('Finished!')
     # Yeni eklenen imza kısmı
-    st.markdown('**Credit By:** [Emincan Yılmaz](https://www.linkedin.com/in/emincan-yilmaz/) & [Boran Oktay Dabak](https://www.linkedin.com/in/boran-oktay-dabak/)')
+    st.markdown('**Created By:** [Emincan Yılmaz](https://www.linkedin.com/in/emincan-yilmaz/) & [Boran Oktay Dabak](https://www.linkedin.com/in/boran-oktay-dabak/)')
 
 if __name__ == "__main__":
     main()
