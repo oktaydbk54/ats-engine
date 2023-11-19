@@ -8,7 +8,7 @@ WORKDIR /app
 RUN git clone https://github.com/oktaydbk54/ats-engine /app
 
 # Install Python dependencies from requirements.txt
-RUN pip install -r /app/requirements.txt
+
 
 # Expose ports for Streamlit and FastAPI
 EXPOSE 8501
@@ -17,6 +17,7 @@ EXPOSE 8000
 # Install Supervisor for managing multiple processes
 RUN apt-get update && apt-get install -y supervisor
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
-
-# Start Supervisor to run both Streamlit and FastAPI
+RUN pip install -r /app/requirements.txt
 CMD ["/usr/bin/supervisord"]
+CMD ["streamlit", "run", "/app/streamlit_codes.py"]
+CMD ["uvicorn", "main_codes:app", "--host", "0.0.0.0", "--port", "8000"]
